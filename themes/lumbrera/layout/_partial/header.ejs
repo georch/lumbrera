@@ -1,0 +1,21 @@
+<p>[themes/lumbrera/layout/_partial/header.ejs]</p>
+<header id="header">
+  <h1 id="logo">
+    <a href="<%- url_for() %>" id="logo"><%= config.title %></a>
+  </h1>
+  <% if (theme.subtitle){ %>
+    <h2 id="subtitle">
+      <a href="<%- url_for() %>" id="subtitle"><%= theme.subtitle %></a>
+    </h2>
+  <% } %>
+  <nav id="main-nav">
+    <% for (var i in theme.menu){ %>
+      <a class="main-nav-link" href="<%- url_for(theme.menu[i]) %>"><%= i %></a>
+    <% } %>
+  </nav>
+  <nav id="sub-nav">
+    <% if (theme.rss){ %>
+      <a id="nav-rss-link" href="<%- url_for(theme.rss) %>" title="<%= __('rss_feed') %>"></a>
+    <% } %>
+  </nav>
+</header>
