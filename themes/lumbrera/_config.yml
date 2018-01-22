@@ -1,0 +1,23 @@
+# Header
+menu:
+  Home: /
+rss: /atom.xml
+
+# Content
+excerpt_link: Read More
+
+# SCSS
+node_sass:
+  debug: false
+  outputStyle: nested
+  precision: 5
+  sourceComments: false
+
+# Miscellaneous
+google_analytics:
+favicon: /favicon.png
+twitter:
+google_plus:
+github:
+fb_admins:
+fb_app_id:
