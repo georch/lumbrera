@@ -1,0 +1,9 @@
+<div class="columns is-gapless">
+  <% site.posts.each(function(project){ %>
+    <% if (project.layout === 'project' && project.path !== page.path){ %>
+      <div class="column is-one-third">
+        <%- include('teaser', {project: project}); %>
+      </div>
+    <% } %>
+  <% }) %>
+</div>
