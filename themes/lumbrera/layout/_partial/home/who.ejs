@@ -1,0 +1,27 @@
+<div class="collaborators">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <div class="intro has-text-centered">
+            <h2 class="title">Who</h2>
+            <p>We are communicators &lt;graphic:digital&gt; and developers.  We plan communication strategies On Line and Off Line.</p>
+            <p>Our practice of communication &lt;graphic:digital&gt; is our "language of fire", our method of interpreting the ambition of your brand that links it to the customer.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="columns">
+      <% site.posts.each(function(collaborator){ %>
+        <% if (collaborator.layout === 'collaborator'){ %>
+          <div class="column is-one-third">
+            <h4 class="title"><%= collaborator.name %></h4>
+            <div class="content">
+              <%- collaborator.content %>
+            </div>
+          </div>
+        <% } %>
+      <% }) %>
+    </div>
+  </div>
+</div>
