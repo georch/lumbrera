@@ -16,6 +16,11 @@
         <% if (collaborator.layout === 'collaborator'){ %>
           <div class="column is-one-third">
             <h4 class="title"><%= collaborator.name %></h4>
+            <% if (collaborator.thumb){ %>
+              <div class="thumb">
+                <img src="images/<%- collaborator.thumb %>">
+              </div>
+            <% } %>
             <div class="content">
               <%- collaborator.content %>
             </div>

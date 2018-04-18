@@ -1,6 +1,7 @@
 ---
 name: Georch
 role: Frontend developer
+thumb: george.png
 layout: collaborator
 date: 2018-03-10 15:07:55
 ---
